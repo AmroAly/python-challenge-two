@@ -1,0 +1,10 @@
+*.pyc
+/static
+__pycache__/
+db.sqlite
+local_settings.py
+/media
+/lib
+/bin
+/include
+.vscode

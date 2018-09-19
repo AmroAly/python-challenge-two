@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Emails list</h3>
+
+<ul class="list-group">
+
+    {% if emails %}
+    {% for email in emails %}
+    <li class="list-group-item">
+        {{ email.email }}
+    </li>
+    {% endfor %}
+    {% else %}
+        <p>There are no emails at the moment <a href="{% url 'create_email' %}">add one</a></p>
+    {% endif %}
+
+</ul>
+
+
+{% endblock %}
